@@ -1,0 +1,168 @@
+.about-main-wrapper {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-inner-wrapper {
+    /* background-color: #01161142; */
+    width: 1000px;
+    height: 550px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-left-wrapper {
+    background-color: #00000024;
+    width: 377px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-left-wrapper img {
+    width: 375px;
+}
+
+
+
+.about-right-wrapper {
+    /* background-color: #00000024; */
+    width: 500px;
+    height: 460px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-heading {
+    /* background-color: #00000038; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.about-heading h2 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.about-sub-heading {
+    /* background-color: #00000045; */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.about-sub-heading h1 {
+    font-weight: 500;
+}
+
+
+.about-description {
+    /* background-color: #00000029; */
+    width: auto;
+    height: auto;
+    border-bottom: 2px solid #00000042;
+}
+
+
+.identity {
+    /* background-color: #0000005c; */
+    width: 100%;
+    height: auto;
+}
+
+.identity-inner-wrapper {
+    /* background-color: #0000004a; */
+}
+
+.identity-inner-wrapper span {
+    font-weight: 600;
+}
+
+
+
+.social-media {
+    /* background-color: #00000082; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow-me-text-wrapper {
+    /* background-color: #00000042; */
+    width: 215px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-me-text-wrapper p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social-media-icons-wrapper {
+    /* background-color: #000; */
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icons-wrapper a {
+    color: #007e68;
+    padding: 0px 10px;
+    font-size: 17px;
+}
+
+.about-button {
+    /* background-color: #00000069; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#hire_me:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+.download {
+    background-color: transparent;
+    border: 1px solid #000;
+    color: #000;
+    width: 130px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+
+.download:hover {
+    background-color: #007e68;
+    color: #fff;
+    border: none;
+}
