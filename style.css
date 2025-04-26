@@ -334,21 +334,31 @@ body {
     align-items: center;
 }
 
+/* Ensure a 50/50 split for the skills section */
 .skills-container {
     display: flex;
     max-width: 1200px; /* Center content within a max width */
     width: 100%;
-    gap: 40px; /* Space between image and content */
+    gap: 20px; /* Space between image and content */
+}
+
+.skills-image {
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Ensure it doesn't exceed 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-image img {
-    max-width: 300px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px; /* Optional rounded corners */
 }
 
 .skills-content {
-    flex: 1;
+    flex: 1; /* Take up 50% of the container */
+    max-width: 50%; /* Ensure it doesn't exceed 50% */
     display: flex;
     flex-direction: column;
     gap: 20px; /* Space between skill items */
@@ -379,4 +389,140 @@ body {
     background-color: #4caf50; /* Green progress bar */
     width: 0; /* Default width */
     transition: width 0.5s ease-in-out;
+}
+
+
+/* Align the skills-intro with the rest of the text */
+.skills-intro {
+    text-align: left; /* Align text to the left */
+    margin-bottom: 30px; /* Add spacing below the intro text */
+}
+
+.skills-intro h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.skills-intro h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 5px 0;
+    color: #555;
+}
+
+.skills-intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin: 10px 0 0;
+}
+
+/* Style for the 'What I Do For You' section */
+.whatido-section {
+    width: 100%; /* Span the entire width of the page */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 40px 20px; /* Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+.whatido-section .container {
+    max-width: 1200px; /* Center content within a max width */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.whatido-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between service cards */
+    justify-content: space-between;
+}
+
+.service-card {
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row with spacing */
+    background-color: #fff; /* White background for cards */
+    padding: 20px;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.service-card i {
+    font-size: 40px; /* Adjust icon size */
+    color: #007E68; /* Icon color */
+    margin-bottom: 10px; /* Add spacing below the icon */
+    display: block; /* Ensure the icon is on its own line */
+}
+/* Style for the Services Section */
+#services-stats {
+    width: 100%; /* Span the full width of the page */
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 40px 20px; /* Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+#services-stats .container {
+    max-width: 1200px; /* Center content within a max width */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Add spacing between service items */
+    justify-content: space-between;
+}
+
+.service {
+    flex: 1 1 calc(33.333% - 20px); /* Three services per row with spacing */
+    background-color: #fff; /* White background for individual service boxes */
+    padding: 20px;
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    text-align: center;
+}
+
+.service-icon {
+    font-size: 40px; /* Adjust icon size */
+    color: #007E68; /* Icon color */
+    margin-bottom: 10px; /* Add spacing below the icon */
+    display: block; /* Ensure the icon is on its own line */
+}
+
+.service-text strong {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.service-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
 }
