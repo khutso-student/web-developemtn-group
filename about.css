@@ -21,7 +21,7 @@
 }
 
 .about-left-wrapper {
-    background-color: #00000024;
+    /* background-color: #00000024; */
     width: 377px;
     height: 500px;
     display: flex;
@@ -31,7 +31,7 @@
 }
 
 .about-left-wrapper img {
-    width: 375px;
+    width: 333px;
 }
 
 

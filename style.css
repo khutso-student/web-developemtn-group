@@ -244,19 +244,13 @@ body {
 }
 
 .img-wrapper img {
-    width: 428px;
-    height: 612px;
-    margin-top: -300px;
+    width: 286px;
+    height: 446px;
+    margin-top: -59px;
 }
 
 /* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
-  }
-  
+
   .container {
     width: 80%;
     margin: 20px auto;
@@ -294,7 +288,7 @@ body {
   
   .person img {
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     height: auto;
     border-radius: 5px;
   }
@@ -351,7 +345,7 @@ body {
 }
 
 .skills-image img {
-    max-width: 100%;
+    max-width: 465px;
     height: auto;
     border-radius: 8px; /* Optional rounded corners */
 }
@@ -508,14 +502,14 @@ body {
 }
 
 .service-icon {
-    font-size: 40px; /* Adjust icon size */
+    font-size: 17px; /* Adjust icon size */
     color: #007E68; /* Icon color */
     margin-bottom: 10px; /* Add spacing below the icon */
     display: block; /* Ensure the icon is on its own line */
 }
 
 .service-text strong {
-    font-size: 18px;
+    font-size: 12px;
     color: #333;
     margin-bottom: 10px;
     display: block;
@@ -525,4 +519,13 @@ body {
     font-size: 14px;
     color: #666;
     line-height: 1.5;
+}
+
+
+.image-holder-wrapper {
+    padding: 0px 20px;
+}
+
+.image-box {
+
 }
