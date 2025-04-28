@@ -252,8 +252,8 @@ body {
 /* Global Styles */
 
   .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 100%;
+    /* margin: 20px auto; */
     padding: 20px;
   }
   
@@ -298,7 +298,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 20px;
   }
   
@@ -521,4 +521,123 @@ body {
 
 .image-holder-wrapper {
     padding: 0px 20px;
+}
+
+
+
+
+@media screen and (max-width: 1010px) {
+    .header-wrapper {
+        width: 881px;
+    }
+
+    .home-inner-wrapper {
+        width: 881px;
+    }
+}
+
+
+@media screen and (max-width: 891px) {
+    .header-wrapper {
+        width: 786px;
+    }
+
+
+    .logo-wrapper a {
+        font-size: 20px;
+    }
+
+    .nav-links-wrapper {
+        width: 485px;
+    }
+
+    .nav-right-buttons-wrapper {
+        width: 174px;
+    }
+
+    .home-inner-wrapper {
+        width: 786px;
+    }
+}
+
+
+@media screen and (max-width: 797px) {
+    .header-wrapper {
+        width: 640px;
+    }
+
+    .nav-links-wrapper {
+        display: none;
+    }
+
+    .home-inner-wrapper {
+        width: 640px;
+    }
+}
+
+
+@media screen and (max-width: 655px) {
+    .header-wrapper {
+        width: 500px;
+    }
+
+
+    .home-inner-wrapper {
+        width: 500px;
+        flex-direction: column;
+        height: auto;
+        gap: 42px;
+    }
+
+    .home-left-wrapper {
+        order: 1;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 515px) {
+    .header-wrapper {
+        width: 400px;
+    }
+
+    .nav-right-buttons-wrapper {
+        display: none;
+    }
+
+
+    .home-inner-wrapper {
+        width: 400px;
+    }
+
+    .home-left-wrapper {
+        width: 100%;
+    }
+
+    .home-right-wrapper {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .header-wrapper {
+        width: 330px;
+    }
+
+    .home-inner-wrapper {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-wrapper {
+        width: 310px;
+    }
+
+    .home-inner-wrapper {
+        width: 280px;
+        padding-left: 10px;
+    }
 }
