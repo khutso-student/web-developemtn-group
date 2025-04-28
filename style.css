@@ -469,47 +469,44 @@ body {
     margin-bottom: 10px; /* Add spacing below the icon */
     display: block; /* Ensure the icon is on its own line */
 }
+
 /* Style for the Services Section */
-#services-stats {
-    width: 100%; /* Span the full width of the page */
-    background-color: #f4f4f4; /* Light grey background */
-    padding: 40px 20px; /* Add padding for spacing */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
-}
-
-#services-stats .container {
-    max-width: 1200px; /* Center content within a max width */
-    margin: 0 auto; /* Center the container */
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add spacing between items */
-}
-
 .services {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    gap: 20px; /* Add spacing between service items */
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
+    gap: 20px; /* Add spacing between items */
+    justify-content: center;
+    align-items: center;
 }
 
 .service {
-    flex: 1 1 calc(33.333% - 20px); /* Three services per row with spacing */
     background-color: #fff; /* White background for individual service boxes */
     padding: 20px;
     border-radius: 8px; /* Optional rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
     text-align: center;
+    transition: transform 0.3s ease; /* Add hover animation */
+}
+
+.service:hover {
+    transform: scale(1.05); /* Slightly enlarge the service box on hover */
 }
 
 .service-icon {
-    font-size: 17px; /* Adjust icon size */
+    font-size: 30px; /* Reduced icon size */
     color: #007E68; /* Icon color */
     margin-bottom: 10px; /* Add spacing below the icon */
     display: block; /* Ensure the icon is on its own line */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add hover animation */
+}
+
+.service-icon:hover {
+    color: #005f4c; /* Change icon color on hover */
+    transform: rotate(10deg); /* Slight rotation on hover */
 }
 
 .service-text strong {
-    font-size: 12px;
+    font-size: 16px; /* Adjust font size for better alignment */
     color: #333;
     margin-bottom: 10px;
     display: block;
@@ -524,8 +521,4 @@ body {
 
 .image-holder-wrapper {
     padding: 0px 20px;
-}
-
-.image-box {
-
 }
