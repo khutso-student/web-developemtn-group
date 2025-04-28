@@ -1,0 +1,125 @@
+/* Contact Page Styles */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.contact-left {
+    flex: 1;
+    min-width: 300px;
+    height: 400px;
+}
+
+.contact-left iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-right {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-right h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007E68;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #005f4c;
+}
+
+/* Footer Styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0a1a1f;
+    color: #ffffff;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px; /* Add spacing between icons */
+}
+
+.footer .social-icons a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007E68; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.footer .copyright {
+    font-size: 14px;
+}
+
+/* Top Footer Styles */
+.footer-top {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #121f22;
+    border-bottom: 1px solid #0a1a1f;
+}
+
+.footer-top .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+.footer-top .contact-info p {
+    margin: 5px 0; /* Add spacing between contact info lines */
+    font-size: 14px;
+}
+

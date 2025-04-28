@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo-wrapper">
+                <a href="index.html">UI Portfolio</a>
+            </div>
+            <div class="nav-links-wrapper">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#whatido-section">Services</a>
+                <a href="#">Blog</a>
+                <a href="#">Pages</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-container">
+            <div class="contact-left">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.469472589735!2d-0.127758684229563!3d51.5073507796354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b33333b3333%3A0x123456789abcdef!2s208%20Avenue%20Street%2C%20UK%20-%2062617!5e0!3m2!1sen!2suk!4v1681234567890!5m2!1sen!2suk" 
+                    title="Location Map for 208 Avenue Street, UK"
+                    allowfullscreen="" >
+                </iframe>
+                <p>If the map is not visible, <a href="https://www.google.com/maps?q=208+Avenue+Street,+UK+-+62617" target="_blank" rel="noopener noreferrer">click here to view the map</a>.</p>
+            </div>
+            <div class="contact-right">
+                <h2>Contact Us</h2>
+                <form action="/submit-form" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-top">
+        <div class="logo">UI Portfolio</div>
+        <div class="contact-info">
+            <p>📞 +12 345 678 900</p>
+            <p>✉️ info@example.com</p>
+            <p>📍 208 Avenue street, UK - 62617</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            © <span id="current-year"></span> UI Portfolio. All Rights Reserved
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://plus.google.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="https://vk.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-vk"></i></a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
