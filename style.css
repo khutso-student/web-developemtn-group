@@ -257,10 +257,15 @@ body {
     padding: 20px;
   }
   
+#services-stats {
+
+}
+
+
   /* Section 1: Services & Statistics */
   .services-person-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -304,6 +309,11 @@ body {
   
   .stat {
     text-align: center;
+    text-align: center;
+    border: 1px solid #0000001f;
+    padding: 10px;
+    border-radius: 10px;
+    width: 220px;
   }
   
   .stat-number {
@@ -352,7 +362,7 @@ body {
 
 .skills-content {
     flex: 1; /* Take up 50% of the container */
-    max-width: 50%; /* Ensure it doesn't exceed 50% */
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px; /* Space between skill items */
@@ -473,19 +483,22 @@ body {
 /* Style for the Services Section */
 .services {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    gap: 20px; /* Add spacing between items */
-    justify-content: center;
-    align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
 }
 
 .service {
-    background-color: #fff; /* White background for individual service boxes */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease; /* Add hover animation */
+    transition: transform 0.3s ease;
+    width: 341px;
 }
 
 .service:hover {
@@ -523,6 +536,18 @@ body {
     padding: 0px 20px;
 }
 
+.mobile-menu-wrapper {
+    display: none;
+}
+
+.hidden-menu {
+    display: none;
+}
+
+.link {
+    color : transparent;
+}
+
 
 
 
@@ -533,6 +558,22 @@ body {
 
     .home-inner-wrapper {
         width: 881px;
+    }
+
+    .service {
+        width: 280px;
+    }
+
+    .stat {
+        width: 200px;
+    }
+
+    .skills-image {
+        width: auto;
+    }
+
+    .skills-image img {
+        width: 416px;
     }
 }
 
@@ -558,12 +599,39 @@ body {
     .home-inner-wrapper {
         width: 786px;
     }
+
+    .skills-image img {
+        width: 398px;
+    }
+
+    .service {
+        width: 215px;
+        height: 240px;
+    }
+
+
+
+    .stat {
+        width: 180px;
+    }
+
+    .stat-number {
+        font-size: 25px;
+    }
+
+    .stat-text {
+        font-size: 12px;
+    }
 }
 
 
 @media screen and (max-width: 797px) {
     .header-wrapper {
         width: 640px;
+        background-color: #000000bd;
+        backdrop-filter: blur(1px);
+        position: fixed;
+        
     }
 
     .nav-links-wrapper {
@@ -572,6 +640,100 @@ body {
 
     .home-inner-wrapper {
         width: 640px;
+    }
+
+    .mobile-menu-wrapper {
+        display: block;
+        /* background-color: #ffffff66; */
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-menu-wrapper i {
+        color: #fff;
+    }
+
+    .menu-icon-holder {
+        background-color: #005f4c;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.5s;
+    }
+
+    
+    #hidden-links {
+        overflow: hidden;
+        transition: height 0.5s;
+        background-color: #000000c1;
+        display: flex;
+        padding-top: 10px;
+        padding-left: 5px;
+        flex-direction: column;
+        width: 640px;
+        margin-top: 80px;
+        position: fixed;
+        z-index: 9;
+        backdrop-filter: blur(5px);
+        
+      }
+      
+      #hidden-links.closed {
+        height: 0px;
+      }
+      
+      #hidden-links.open {
+        height: 270px;
+      }
+
+      #hidden-links a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 15px;
+        padding-bottom: 5px;
+        transition: all .5s;
+        margin-top: 20px;
+      }
+     
+      #hidden-links a:hover {
+        color: #663050;
+        border-right: 2px solid #663050;
+      }
+
+      .skills-image img {
+        width: 322px;
+    }
+
+      .stat {
+        width: 149px;
+    }
+
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .services {
+        /* background-color: #00000024; */
+        width: 100%;
+    }
+
+    .service {
+        width: 292px;
+        height: 156px;
+        margin-top: 20px;
+    }
+
+    .person {
+        /* background-color: #0000003d; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -593,6 +755,42 @@ body {
         order: 1;
     }
 
+    .img-wrapper {
+        margin-top: 80px;
+    }
+
+    #hidden-links {
+        width: 500px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-image img {
+        width: 382px;
+    }
+
+
+
+    .statistics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .service {
+        width: 217px;
+        height: auto;
+     
+    }
+
+    .stat {
+        width: 239px;
+    }
+
+ 
 
 }
 
@@ -601,6 +799,8 @@ body {
 @media screen and (max-width: 515px) {
     .header-wrapper {
         width: 400px;
+        justify-content: space-between;
+        padding: 0px 10px;
     }
 
     .nav-right-buttons-wrapper {
@@ -619,7 +819,33 @@ body {
     .home-right-wrapper {
         width: 100%;
     }
+
+    #hidden-links {
+        width: 400px;
+    }
+
+    .stat {
+        width: 190px;
+    }
+
+    .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    
+    .service {
+        width: 352px;
+   
+     
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 415px) {
     .header-wrapper {
@@ -628,6 +854,23 @@ body {
 
     .home-inner-wrapper {
         width: 330px;
+    }
+
+    #hidden-links {
+        width: 330px;
+    }
+
+    .skills-image img {
+        width: 326px;
+    }
+
+
+    .stat {
+        width: 157px;
+    }
+
+    .service {
+        width: 286px;
     }
 }
 
@@ -639,5 +882,21 @@ body {
     .home-inner-wrapper {
         width: 280px;
         padding-left: 10px;
+    }
+
+    #hidden-links {
+        width: 310px;
+    }
+
+    .skills-image img {
+        width: 311px;
+    }
+
+    .stat {
+        width: 140px;
+    }
+
+    .service {
+        width: 262px;
     }
 }

@@ -6,3 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
         bar.style.width = `${target}%`;
     });
 });
+
+
+function toggleDiv() {
+    var div = document.getElementById('hidden-links');
+    div.classList.toggle('closed');
+    div.classList.toggle('open');
+  };
